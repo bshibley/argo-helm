@@ -182,6 +182,10 @@ configs:
     # -- Timeout to refresh application data as well as target manifests cache
     timeout.hard.reconciliation: 0s
 
+    # -- Enable Kustomizing Helm charts globally
+    # -- https://argo-cd.readthedocs.io/en/stable/user-guide/kustomize/
+    kustomize.buildOptions: --enable-helm
+
     # Dex configuration
     # dex.config: |
     #   connectors:
